@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>样式优先级</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        .nav div {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>文字1</div>
+    <div class="nav">
+        <div>文字2</div>
+    </div>
+    <div class="nav">
+        <div style="font-size: 30px;">文字3</div>
+    </div>
+</body>
+
+</html>

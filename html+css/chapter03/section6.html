@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>子元素选择器</title>
+    <style>
+        /*兄弟选择器 
+         * 1：+ 选择紧挨着的下一个兄弟元素 
+         * 2：~ 选择下面所有的胸第元素*/
+        .one+li{
+            background-color: green;
+        }
+        .two~li{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+ 
+   <div class="box">
+       <ul>
+           <li class="two">li1</li>
+           <li class="one">li2</li>
+           <li>li3</li>
+           <li>li4</li>
+       </ul>
+   </div>
+   <div class="box1">
+       <ul>
+           <li>li1</li>
+           <li class="one">li2</li>
+           <li>li3</li>
+           <li>li4</li>
+       </ul>
+   </div>
+   <script type="text/javascript">
+      let three = document.queryselectorall(".one+li")
+       console.log("兄弟选择器+",three)
+ 
+       let four = document.queryselectorall(".two~li")
+       console.log("兄弟选择器~",four)
+ 
+   </script>
+</body>
+</html>

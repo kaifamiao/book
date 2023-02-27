@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes box {
+            0% {transform: rotate(0);}
+            50% {transform: rotate(0.5turn);}
+            100% {transform: rotate(1turn);}
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            animation: box 2s linear 0s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div>animation</div>
+</body>
+</html>
