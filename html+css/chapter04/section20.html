@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes box {
+            0% {transform: rotate(0);}
+            50% {transform: rotate(0.5turn);}
+            100% {transform: rotate(1turn);}
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <div>forwards</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@charset "utf-8";
+* { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+html, body { background: none repeat scroll 0 0 #FFFFFF; color: #000000; }
+body {  background-color:#F6F6F6; font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 13px; line-height: 1.5; word-wrap: break-word; }
+p { line-height: 1.7;}
+a { text-decoration: none; color: #1A8BC8; }
+a:visited { color: #1A8BC8; }
+li { list-style: none; }
+img { border: none;}
+footer { text-align: center; color: Gray;}
+.c { clear: both;}
+.l-h-1 { line-height: 1;}
+.f-n { float: none;}
+.l { float : left;}
+.r { float: right;}
+
+.header { background-image:url(../img/bg.jpg); background-size:cover; height: 195px; border: 1px dotted #8B8D72; }
+.header hgroup{ margin: 30px 0 0 50px;  }
+.header h1 { font-size: 50px; font-weight: bold; text-decoration: none; color: Black;}
+.header h2 { font-size: 30px; }
+
+.nav { margin: 20px 260px 20px 20px; background: white; border: 1px dotted #8B8D72; ;}
+.nav ul{ padding: 5px 0 0 5px; }
+.nav li{ display: inline; padding: 5px 5px 0; }
+.nav aside { text-align: right; padding: 0 5px 5px;}
+
+.main { margin: 0 260px 20px 20px; background: white; border: 1px dotted #8B8D72; padding: 20px;}
+.main article header { margin-bottom: 10px; }
+.main article header h1{ font-size: 16px; font-weight: bold; }
+.main article header h1 a{ color: #1A8BC8; text-decoration: none; }
+.main article header h1 time, .main article header h1 span{ font-size: 12px; font-weight:  normal; float: right; }
+.main article section h2{ background: none repeat #2B6695; border-radius: 6px; box-shadow: 0 0 0 1px #5F5A4B, 1px 1px 6px 1px rgba(10, 10, 0, 0.5); color: #FFFFFF; font-size: 14px; font-weight: bold; height: 25px; line-height: 25px; margin: 15px 0 !important; padding: 5px 0 5px 20px; text-shadow: 2px 2px 3px #222222; }
+.main .book { margin: 10px; }
+.main .book header { border-bottom: 1px solid  #2B6695; }
+.main .book .author { font-weight: bold;}
+.main .book h3 { background: #2B6695; padding: 5px 20px; border-radius: 4px 4px 0 0; display: inline-block; margin-left: 20px; font-weight: bold; color: White; }
+
+.main .green_channel { border: 1px dotted #8B8D72; padding: 10px 10px ; margin: 10px 0 10px 0; width: 420px;}
+.main .green_channel a { margin: 0 2px; display: inline-block; padding: 2px 10px; font-size: 12px; font-weight: bold; color: White; background: url("data:img/kaifamiao.png") repeat-x scroll 0 0 transparent;}
+.main .green_channel .green { background-color: #2DAEBF; }
+.main .green_channel .red { background-color: #E33100;}
+.main .green_channel .yellow { background-color: #FFB515;}
+.main .green_channel .gray { background-color: #EEEEEE; color: #555555;}
+.main .green_channel img { vertical-align: -7px;}
+	 
+.main .author_info { display: inline-block; }
+.main .author_info .info_txt { display: inline-block; text-decoration: none; font-size: 12px; line-height: 1.5 }
+.main .digg { float: right;}
+.main .digg div { margin: 0 10px; display: inline-block; color: #075DB3; font-family: Verdana; font-size: 14px; text-align: center;}
+.main .digg div.f-n { float: none; display: block;color: gray; font-size: 12px;}
+.main .digg .top { width: 46px; height: 52px;}
+.main .digg .down {width: 46px; height: 52px;}
+
+.aside { position: absolute; right: 20px; top: 215px; width: 220px; border: 1px dotted #8B8D72; background: white;}
+.aside .my_info { margin: 10px; line-height: 1.4;}
+.aside .side_bar { margin: 10px;}
+.aside .side_bar h3{margin: 10px 0; font-weight: bold;}
+
+.comment { margin: 0 20px 20px 260px;}
+.comment h2 { padding: 5px 0;}
+.comment li { padding: 5px 15px; margin: 10px 0; border: 1px dotted #8B8D72; background: white; }
+.comment li a{ padding: 0 3px; }

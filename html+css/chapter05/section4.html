@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 10px;
+        }
+        .flex div {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+            border: 1px solid black;
+        }
+        .flex-start {
+            justify-content: flex-start;
+        }
+        .flex-end {
+            justify-content: flex-end;
+        }
+        .center {
+            justify-content: center;
+        }
+        .space-between {
+            justify-content: space-between;
+        }
+        .space-around  {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex flex-start">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+    </div>
+    <div class="flex flex-end">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+    </div>
+    <div class="flex center">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+    </div>
+    <div class="flex space-between">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+    </div>
+    <div class="flex space-around">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+    </div>
+</body>
+</html>

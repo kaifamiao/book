@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            perspective:150;
+            perspective-origin: 10% 10%;
+            -webkit-perspective:150;
+            -webkit-perspective-origin: 10% 10%;
+            border: 3px solid black;
+            margin: 10px 0px 0px 10px;
+        }
+        .transform {
+            background-color: red;
+            border: none;
+            transform: rotate3d(0, 1, 2, 40deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="transform">rotate3d(0, 1, 2, 40deg);</div>
+    </div>
+</body>
+</html>
