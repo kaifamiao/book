@@ -1,46 +1,45 @@
+<!-- chapter03/section14 -->
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <title>透明度</title>
     <style>
-        div {
-            height: 30px;
-            border: 1px solid green;
-            margin-top: 10px;
+        .box1 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #00f;
+            z-index: 10;
+            opacity: 0.5;
         }
-        .cell {
-            cursor: cell;
+        .box2 {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            width: 200px;
+            height: 200px;
+            background-color: #0f0;
+            z-index: 5;
+            opacity: 0.5;
         }
-        .crosshair {
-            cursor: crosshair;
-        }
-        .text {
-            cursor: text;
-        }
-        .vertical-text {
-            cursor: vertical-text;
-        }
-        .alias {
-            cursor: alias;
-        }
-        .copy {
-            cursor: copy;
-        }
-        .move {
-            cursor: move;
-        }
-        .no-drop {
-            cursor: no-drop;
+        .box3 {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: #f00;
+            z-index: 1;
+            opacity: 0.5;
         }
     </style>
 </head>
+
 <body>
-    <div class="cell">cursor: cell;</div>
-    <div class="crosshair">cursor: crosshair;</div>
-    <div class="text">cursor: text;</div>
-    <div class="vertical-text">cursor: vertical-text;</div>
-    <div class="alias">cursor: alias;</div>
-    <div class="copy">cursor: copy;</div>
-    <div class="move">cursor: move;</div>
-    <div class="no-drop">cursor: no-drop;</div>
+    <!-- chapter03/section14 -->
+    <div class=box1></div>
+    <div class=box2></div>
+    <div class=box3></div>
 </body>
+
 </html>

@@ -1,42 +1,42 @@
+<!-- chapter03/section12 -->
 <!doctype html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>制作导航</title>
-    <style>
-        #nav li {
-            float: left;
+    <title>背景色</title>
+    <style type="text/css">
+        .program li {
             list-style: none;
-            margin-right: 5px;
-            width: 100px;
-            height: 50px;
-            font-size: 20px;
+            width: 160px;
+            height: 100px;
+            text-align: right;
+            line-height: 80px;
+            font-size: 18px;
             font-family: 微软雅黑;
-            text-align: center;
-            line-height: 50px;
-            background-color: #EEE;
         }
 
-        #nav li a {
-            display: block;
-            text-decoration: none;
+        .li1 {
+            background-image: url(images/bg.png);
+            background-repeat: no-repeat;
         }
 
-        #nav li a:hover {
-            background-color: #CCC;
+        .li2 {
+            background-position: -160px 0px;
+        }
+
+        .li3 {
+            background-position: -320px 0px;
         }
     </style>
 </head>
 
 <body>
-    <div id="nav">
-        <ul>
-            <li><a href="javascript:void(0)">公司简介</a></li>
-            <li><a href="javascript:void(0)">技术支持</a></li>
-            <li><a href="javascript:void(0)">产品介绍</a></li>
-        </ul>
-    </div>
+    <!-- chapter03/section12 -->
+    <ul class="program">
+        <li class="li1">编程语言</li>
+        <li class="li1 li2">编程语言</li>
+        <li class="li1 li3">编程语言</li>
+    </ul>
 </body>
 
 </html>

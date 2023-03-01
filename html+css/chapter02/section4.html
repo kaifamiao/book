@@ -1,0 +1,105 @@
+<!-- chapter02/section4 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>表单实例</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <form name="from1" method="post" action="">
+            <table width="800" border="0" align="center" cellpadding="0" cellspacing="5">
+                <caption>问卷调查</caption>
+                <tr>
+                    <td width="120" height="30" align="right">姓  名：</td>
+                    <td width="242">
+                        <input type="text" name="name" id="name" placeholder="请输入姓名" required="required">
+                    </td>
+                    <td whidth="127" align="right">密  码：</td>
+                    <td width="301">
+                        <input type="password" name="pass" id="pass" placeholder="请输入密码" required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">性  别：</td>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="男">男&nbsp;
+                        <input type="radio" name="gender" id="gender" value="女">女&nbsp;
+                    </td>
+                    <td align="right">问卷调查：</td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="hobby1" value="网络">网络&nbsp;
+                        <input type="checkbox" name="hobby" id="hobby2" value="报纸">报纸&nbsp;
+                        <input type="checkbox" name="hobby" id="hobby3" value="新媒体">新媒体&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">籍  贯：</td>
+                    <td>
+                        <select name="province" id="province">
+                            <option value="辽宁">辽宁</option>
+                            <option value="吉林">吉林</option>
+                            <option value="黑龙江" selected="selected">黑龙江</option>
+                        </select>
+                    </td>
+                    <td align="right">电子邮件：</td>
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="请输入邮箱">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">个人网址：</td>
+                    <td>
+                        <input type="url" name="url" id="url" placeholder="请输入个人网址">
+                    </td>
+                    <td align="right">出生日期：</td>
+                    <td>
+                        <input type="date" name="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">问卷时间：</td>
+                    <td>
+                        <input type="time" name="time" id="time">
+                    </td>
+                    <td align="right">问卷月份：</td>
+                    <td>
+                        <input type="month" name="month" id="month">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">问卷星期：</td>
+                    <td>
+                        <input type="week" name="week" id="week">
+                    </td>
+                    <td align="right">年   龄：</td>
+                    <td>
+                        <input type="number" name="number" id="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">喜欢颜色：</td>
+                    <td>
+                        <input type="color" name="color" id="color">
+                    </td>
+                    <td align="right">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height="30" align="right">简   介：</td>
+                    <td colspan="3">
+                        <textarea cols="80" rows="8" name="introduce" id="introduce"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="30">&nbsp;</td>
+                    <td colspan="3">
+                        <input type="image" src="images/submit.gif" />
+                        <button>提交</button>
+                        <input type="reset" value="重置" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

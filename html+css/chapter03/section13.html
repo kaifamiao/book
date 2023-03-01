@@ -1,43 +1,44 @@
-<!DOCTYPE html>
+<!-- chapter03/section13 -->
+<!Doctype html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>透明度</title>
+    <meta charset="utf-8">
+    <title>制作导航</title>
     <style>
-        .box1 {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background-color: #00f;
-            z-index: 10;
-            opacity: 0.5;
+        #nav li {
+            float: left;
+            list-style: none;
+            margin-right: 5px;
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-family: 微软雅黑;
+            text-align: center;
+            line-height: 50px;
+            background-color: #EEE;
         }
-        .box2 {
-            position: absolute;
-            top: 80px;
-            left: 80px;
-            width: 200px;
-            height: 200px;
-            background-color: #0f0;
-            z-index: 5;
-            opacity: 0.5;
+
+        #nav li a {
+            display: block;
+            text-decoration: none;
         }
-        .box3 {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background-color: #f00;
-            z-index: 1;
-            opacity: 0.5;
+
+        #nav li a:hover {
+            background-color: #CCC;
         }
     </style>
 </head>
 
 <body>
-    <div class=box1></div>
-    <div class=box2></div>
-    <div class=box3></div>
+    <!-- chapter03/section13 -->
+    <div id="nav">
+        <ul>
+            <li><a href="javascript:void(0)">公司简介</a></li>
+            <li><a href="javascript:void(0)">技术支持</a></li>
+            <li><a href="javascript:void(0)">产品介绍</a></li>
+        </ul>
+    </div>
 </body>
 
 </html>
