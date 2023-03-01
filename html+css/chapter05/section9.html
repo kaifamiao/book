@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
-        .box {
-            width: 480px;
-            height: 260px;
-            border: 1px solid red;
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            border: 1px solid #CCC;
         }
-        .a-box {
-            width: 50px;
-            height: 150px;
-            background-color: #CCC;
-            float: left;
-        }
-        .b-box {
-            width: 155px;
+        .flex div {
+            width: 60px;
             height: 60px;
             border: 1px solid black;
-            float: left;
         }
-        .c-box {
-            width: 100px;
-            height: 100px;
-            background-color: #007FFF;
-            clear: left;
+        .flex div:nth-child(2) {
+            flex:0;
+        }
+        .flex div:nth-child(4) {
+            flex:1 1 auto;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="a-box">a-box</div>
-        <div class="b-box">b-box</div>
-        <div class="c-box">c-box</div>
+    <div class="flex">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+		<div>E</div>
     </div>
 </body>
 </html>

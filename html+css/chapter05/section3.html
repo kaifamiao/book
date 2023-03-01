@@ -1,31 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <style>
-        .flex_flow {
-            display: flex;
-            flex-flow: row-reverse wrap;
-        }
-        .flex_flow div {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 5px;
-            border: 1px solid black;
-        }
-    </style>
-</head>
-<body>
-    <div class="flex_flow">
-        <div>1</div>
-		<div>2</div>
-		<div>3</div>
-		<div>4</div>
-		<div>5</div>
-		<div>6</div>
-		<div>7</div>
-		<div>8</div>
-		<div>9</div>
-		<div>10</div>
-    </div>
-</body>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		        #main {
+		            border: 1px solid #CCC;
+		            padding: 5px;
+		            position: relative;
+		        }
+		        .row, .row_reverse, .column, .column_reverse{
+		            display: flex;
+		            margin-bottom: 5px;
+		        }
+		        .row {
+		            flex-direction: row;
+		        }
+		        .row_reverse {
+		            flex-direction: row-reverse;
+		        }
+		        .column {
+		            flex-direction: column;
+		        }
+		        .column_reverse {
+		            flex-direction: column-reverse;
+		            position: absolute;
+		            top: 120px;
+		            left: 400px;
+		        }
+		        .row div, .row_reverse div, .column div, .column_reverse div {
+		            width: 50px;
+		            height: 50px;
+		            border: 1px solid black;
+		        }
+		    </style>
+	</head>
+	<body>
+		 <div id="main">
+		        <div class="row">
+		            <div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+		        </div>
+		        <div class="row_reverse">
+		            <div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+		        </div>
+		        <div class="column">
+		            <div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+		        </div>
+		        <div class="column_reverse">
+		            <div>A</div>
+					<div>B</div>
+					<div>C</div>
+					<div>D</div>
+					<div>E</div>
+		        </div>
+		    </div>
+	</body>
 </html>

@@ -5,25 +5,38 @@
         .flex {
             display: flex;
             flex-flow: row wrap;
-            align-items: flex-end;
-            border: 1px solid #CCC;
+            margin-top: 10px;
         }
         .flex div {
             width: 60px;
             height: 60px;
+            margin-bottom: 5px;
             border: 1px solid black;
         }
+        .flex div:nth-child(1) {
+            order: 5;
+        }
         .flex div:nth-child(2) {
-            flex:0;
+            order: 3;
+        }
+        .flex div:nth-child(3) {
+            order: 1;
         }
         .flex div:nth-child(4) {
-            flex:1 1 auto;
+            order: 2;
+        }
+        .flex div:nth-child(5) {
+            order: 4;
         }
     </style>
 </head>
 <body>
     <div class="flex">
-        <div>A</div><div>B</div><div>C</div><div>D</div><div>E</div>
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+		<div>E</div>
     </div>
 </body>
 </html>

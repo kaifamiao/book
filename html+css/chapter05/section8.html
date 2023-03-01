@@ -1,46 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <style>
-        .a-box {
-            width: 445px;
-            height: 120px;
-            border: 1px solid red;
-            padding: 20px;
-            overflow: hidden;
+        .flex {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            border: 1px solid #CCC;
+            height: 150px;
         }
-        .b-box {
-            width: 100px;
-            height: 100px;
-            border: 1px solid green;
-            color: red;
-			background-color: antiquewhite;
+        .flex div {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
         }
-        .c-box {
-            width: 445px;
-            height: 120px;
-            border: 1px solid red;
-            padding: 20px;
-			background-color: aquamarine;
-        }
-        .d-box {
-            width: 100px;
-            height: 100px;
-            border: 1px solid green;
-            float: left;
-            color: red;
+        .flex div:nth-child(4) {
+            align-self: flex-start;
         }
     </style>
 </head>
 <body>
-    <div class="a-box">
-        浮动指的是让设置了 float 属性的元素脱离正常的位置，在父元素内容区中向左或向右移动，
-		<div class="b-box">没有浮动的元素</div>直到碰到父元素内容区的边界或者其它浮动元素为止，父元素中的文本和行内元素将环绕浮动元素。
-    </div>
-    <div class="c-box">
-        浮动指的是让设置了 float 属性的元素脱离正常的位置，在父元素内容区中向左或向右移动，
-		<div class="d-box">左浮动的元素</div>
-		直到碰到父元素内容区的边界或者其它浮动元素为止，父元素中的文本和行内元素将环绕浮动元素。
+    <div class="flex">
+        <div>A</div>
+		<div>B</div>
+		<div>C</div>
+		<div>D</div>
+		<div>E</div>
     </div>
 </body>
 </html>
