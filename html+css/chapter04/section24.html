@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes box {
+            0% {transform: rotate(0);}
+            50% {transform: rotate(0.5turn);}
+            100% {transform: rotate(1turn);}
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            border: 3px solid black;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .one {
+            animation-play-state: running;
+        }
+        .two {
+            margin-left: 50px;
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">running</div>
+    <div class="two">paused</div>
+</body>
+</html>

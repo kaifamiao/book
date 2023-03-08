@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .a-box {
+            width: 445px;
+            height: 120px;
+            border: 1px solid red;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .b-box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            color: red;
+        }
+        .c-box {
+            width: 445px;
+            height: 120px;
+            border: 1px solid red;
+            padding: 20px;
+        }
+        .d-box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            float: left;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="a-box">
+        浮动指的是让设置了 float 属性的元素脱离正常的位置，在父元素内容区中向左或向右移动，
+		<div class="b-box">没有浮动的元素</div>直到碰到父元素内容区的边界或者其它浮动元素为止，父元素中的文本和行内元素将环绕浮动元素。
+    </div>
+    <div class="c-box">
+        浮动指的是让设置了 float 属性的元素脱离正常的位置，在父元素内容区中向左或向右移动，
+		<div class="d-box">左浮动的元素</div>
+		直到碰到父元素内容区的边界或者其它浮动元素为止，父元素中的文本和行内元素将环绕浮动元素。
+    </div>
+</body>
+</html>

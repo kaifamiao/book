@@ -1,0 +1,66 @@
+<!-- chapter03/section7 -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .demo a {
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 20px;
+            background-color: salmon;
+            text-align: center;
+            color: aqua;
+            text-decoration: none;
+            margin-right: 10px;
+            font: bold 20px/50px Arial;
+        }
+ 
+        /* 选中存在id属性的<a>元素 */
+        a[id] {
+            background-color: yellow;
+        }
+ 
+        /* 选中存在id属性，且属性值为first的<a>元素 */
+        a[id = "first"] {
+            background-color: green;
+        }
+ 
+        /* 选中存在class属性, 且属性值包含子串links的<a>元素 */
+        a[class *= "links"] {
+            background-color: darkblue;
+        }
+ 
+        /* 选中存在href属性, 且属性值是以http开头的<a>元素 */
+        a[href ^= "http"] {
+            background-color: darkorchid;
+        }
+ 
+        /* 选中存在href属性，且属性值是以pdf结尾的<a>元素 */
+        a[href $= ".jpg"] {
+            background-color: black;
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- chapter03/section7 -->
+    <p class="demo">
+        <a href="bing.com" class="link item first" id="zero">0</a>
+        <a href="bing.com" class="link item first" id="first">1</a>
+        <a href="baidu.com" class="link item active" target="_blank" title="test">2</a>
+        <a href="http://www.baidu.com/" class="links item">3</a>
+        <a href="http://www.baidu.com/" class="links item">4</a>
+        <a href="images/123.html" class="links item">5</a>
+        <a href="/picture.jpg" class="links item">6</a>
+        <a href="test.jpg" class="links item">7</a>
+        <a href="/abc.pdf" class="link item">8</a>
+        <a href="abc.doc" class="links item last">9</a>
+    </p>
+</body>
+ 
+</html>

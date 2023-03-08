@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #main {
+            border: 1px solid #CCC;
+            padding: 5px;
+        }
+        .nowrap, .wrap, .wrap_reverse {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+        }
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+        .wrap {
+            flex-wrap: wrap;
+        }
+        .wrap_reverse {
+            flex-wrap: wrap-reverse;
+        }
+        .nowrap div, .wrap div, .wrap_reverse div {
+            width: 70px;
+            height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="nowrap">
+            <div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+        </div>
+        <div class="wrap">
+            <div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+        </div>
+        <div class="wrap_reverse">
+            <div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!-- chapter03/section7 -->
+<!Doctype html>
+<html>
+
+<head>
+    <title>伪类选择器</title>
+    <style type="text/css">
+        /*定义默认链接样式*/
+        a:link {
+            font-size: 14px;
+        }
+
+        a:visited {
+            color: #930;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        /*定义新闻链接样式*/
+        a.news:link {
+            font-size: 20px;
+        }
+
+        a.news:visited {
+            color: #C30;
+        }
+
+        a.news:hover {
+            text-decoration: none;
+        }
+
+        a.news:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- chapter03/section7 -->
+    <a href="#">我使用默认链接样式</a>
+    <a href="#" class="news">我使用新闻链接样式</a>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!-- chapter03/section14 -->
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>制作导航</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        div {
+            margin: 1em;
+            font-size: 1.2em;
+        }
+
+        p {
+            width: 8em;
+            height: 5em;
+            border: dotted;
+        }
+
+        p.visible {
+            overflow: visible;
+        }
+
+        p.hidden {
+            overflow: hidden;
+        }
+
+        p.scroll {
+            overflow: scroll;
+        }
+
+        p.auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- chapter03/section14 -->
+    <div>
+        <code>visible</code>
+        <p class="visible">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium.
+        </p>
+    </div>
+
+    <div>
+        <code>hidden</code>
+        <p class="hidden">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium.
+        </p>
+    </div>
+
+    <div>
+        <code>scroll</code>
+        <p class="scroll">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium.
+        </p>
+    </div>
+
+    <div>
+        <code>auto</code>
+        <p class="auto">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium.
+        </p>
+    </div>
+
+</body>
+
+</html>
