@@ -1,24 +1,19 @@
-/* 任务1：创建公司数据库 */
+/* 任务1 */
 # 创建公司信息数据库
 CREATE DATABASE company_info;
 
 
-/* 任务2：使用company_info数据库*/
-# 使用company_info数据库
+/* 任务2 */
+# 使用 company_info 数据库
 USE company_info;
 
 
-/* 任务3：删除指定数据库*/
-# 删除company_info数据库
+/* 任务3*/
+# 删除 company_info 数据库
 DROP DATABASE company_info;
 
 
-/* 任务4：创建和已有表结构一样的表*/
-# 创建和已有表结构一样的表  
-CREATE TABLE emp1 LIKE emp;  
-
-
-/* 任务5：创建部门表和员工表*/
+/* 任务4：创建部门表和员工表*/
 # 创建部门表  
 CREATE TABLE dept(  
     dept_no INT,  
@@ -39,6 +34,11 @@ CREATE TABLE emp(
 );  
 
 
+/* 任务5*/
+# 创建和已有表结构一样的表  
+CREATE TABLE emp1 LIKE emp;  
+
+
 /* 任务6：以SQL形式和表格形式查看emp数据表*/
 # 以SQL的形式展示表结构
 SHOW CREATE TABLE emp;
@@ -47,10 +47,12 @@ SHOW CREATE TABLE emp;
 DESC emp; 
 
 
-
+/* 任务7*/
 # 删除emp1数据表
 DROP TABLE emp1;
 
+
+/* 任务8：添加部门和员工*/
 # 给dept表中添加数据
 INSERT INTO dept VALUES(10, '人事部', '北京');
 INSERT INTO dept(dept_no,d_name, loc) VALUES(20,'软件部', '深圳');
@@ -95,20 +97,27 @@ INSERT INTO emp(
     30011, '张青', '销售助理', 3001, '2005-3-1', 2000, 2000, 30  
   );  
 
+
+/* 任务9*/
 # 查询dept表
 SELECT dept_no,d_name,loc FROM dept;
 
+
+/* 任务10*/
 # 修改emp表中员工李逵的奖金为3000
 UPDATE emp SET comm = 3000 WHERE e_name='李逵';
 
+
+/* 任务11*/
 # 删除员工表emp中e_name为李逵的记录
 DELETE FROM emp WHERE e_name='李逵';
 
+
+/* 任务12*/
 # 备份数据库company_info
 mysqldump  -h127.0.0.1  -uroot  -proot company_info > c:/back.sql;
 
-# 备份指定数据库和表
-mysqldump -u username -p password dbname table1 table2…… > path；
 
+/* 任务13*/
 # 还原数据库company_info
 mysql  -h127.0.0.1  -uroot  -proot company_info < c:/back.sql;

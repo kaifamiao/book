@@ -9,7 +9,7 @@ ALTER TABLE dept
 # 创建员工表，emp_no为自增长主键
 CREATE TABLE emp(
 	emp_no INT PRIMARY KEY AUTO_INCREMENT,
-	ename VARCHAR(10),
+	e_name VARCHAR(10),
 	job VARCHAR(10),
 	mgr INT,
 	hirdate DATETIME,
