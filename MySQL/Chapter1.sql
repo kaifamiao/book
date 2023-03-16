@@ -52,6 +52,44 @@ DESC emp;
 DROP TABLE emp1;
 
 
+/* 任务8：创建用户*/
+#  user1用户只能在localhost这个IP登录mysql服务器  
+CREATE USER 'user1'@'localhost' IDENTIFIED BY '1234';  
+#  user2用户可以在任何电脑上登录mysql服务器  
+CREATE USER 'user2'@'%' IDENTIFIED BY '1234';  
+
+
+/* 任务9*/
+# 使用 GRANT 语句创建test3 用户  
+GRANT   
+SELECT   
+  ON *.* TO 'test3' @localhost IDENTIFIED BY 'test3';  
+
+
+/* 任务10*/
+# 修改用户  
+RENAME USER 'test1'@'localhost' TO 'testUser1'@'localhost';  
+
+
+/* 任务11*/
+#  删除用户
+ DROP USER 'test1'@'localhost';
+
+
+/* 任务12*/
+# DELETE 删除用户
+DELETE FROM mysql.user WHERE Host='localhost'AND User='test2';
+
+
+
+/* 任务13：给用户分配权限*/
+#  给user1用户分配对test这个数据库操作的权限
+GRANT CREATE,ALTER,DROP,INSERT,UPDATE,DELETE,SELECT ON test.* TO 'user1'@'localhost';
+
+#  给user2用户分配对所有数据库操作的权限
+GRANT ALL ON *.* TO 'user2'@'%';
+
+
 /* 任务8：添加部门和员工*/
 # 给dept表中添加数据
 INSERT INTO dept VALUES(10, '人事部', '北京');
