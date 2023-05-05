@@ -13,4 +13,6 @@ class Apple extends Fruit {
     public void info() {
         System.out.println("苹果重写水果的info()方法");
     }
+
+
 }
