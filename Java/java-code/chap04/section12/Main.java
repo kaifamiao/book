@@ -14,9 +14,9 @@ public class Main {
                 {71, 72}
         };
 
-        //遍历二维数组，计算每个班的总成绩
+        // 遍历二维数组，计算每个班的总成绩
         for (int i = 0; i < scores.length; i++) {
-            //定义保存总成绩的变量total
+            // 定义保存总成绩的变量total
             int total = 0;
             for (int j = 0; j < scores[i].length; j++) {
                 total += scores[i][j];

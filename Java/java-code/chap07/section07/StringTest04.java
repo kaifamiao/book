@@ -8,7 +8,8 @@ public class StringTest04 {
         String name2 = "kaiFaMiao";
         boolean equalsIgnoreCase = name1.equalsIgnoreCase(name2);
         boolean equals = name1.equals(name2);
-        System.out.println("两个字符串equalsIgnoreCase比较的结果是" + equalsIgnoreCase); // true
+        System.out.println("两个字符串equalsIgnoreCase比较的结果是"
+                + equalsIgnoreCase); // true
         System.out.println("两个字符串equals比较的结果是" + equals); // false
     }
 }

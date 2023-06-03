@@ -18,9 +18,9 @@ public class TestPerson {
         Person person2 = person1;
         System.out.println("person1.age=" + person1.age);
         person2.age = 22;
-        System.out.println("把person1对象赋给person2对象，修改person2对象的age属性值后，person1.age=" + person1.age);
+        System.out.println("把person1对象赋给person2对象，" +
+                "修改person2对象的age属性值后，person1.age=" + person1.age);
     }
-
 }
 
 

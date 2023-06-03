@@ -1,9 +1,9 @@
 package chap05.section03;
 
-// chap05/section03
+// chap05/section03/Main.java
 public class Main {
 
-    //定义方法
+    // 定义方法
     public static void average() {
         java.util.Scanner input = new java.util.Scanner(System.in);
         System.out.print("请输入Java成绩：");
@@ -16,8 +16,8 @@ public class Main {
         System.out.println("该喵星人的平均成绩是:" + result1);
     }
     public static void main(String[] args) {
-        average();// 第一次方法调用计算第一个学生成绩。
-        average();// 第二次方法调用计算第二个学生成绩。
-        average();// 第三次方法调用计算第三个学生成绩。
+        average(); // 第一次方法调用计算第一个学生成绩。
+        average(); // 第二次方法调用计算第二个学生成绩。
+        average(); // 第三次方法调用计算第三个学生成绩。
     }
 }

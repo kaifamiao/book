@@ -21,7 +21,7 @@ public class Main {
             // 拼接密码
             password = password + pass1 + pass2 + pass3;
         }
-        System.out.println("系统为你生成了随机密码，请牢记，密码为：" + password);
+        System.out.println("系统为你生成了随机密码，请牢记，密码为："
+                + password);
     }
-
 }

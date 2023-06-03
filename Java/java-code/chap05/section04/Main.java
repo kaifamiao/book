@@ -1,6 +1,6 @@
 package chap05.section04;
 
-// chap05/section04
+// chap05/section04/Main.java
 public class Main {
 
     public static double average() {

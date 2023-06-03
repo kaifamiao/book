@@ -13,10 +13,10 @@ public class Person { // 定义Person类
     }
 
     public static void main(String[] args) {
-        Person miao = new Person(); // 实例化对象miao
-        miao.name = "喵星人"; // 为对象的name字段赋值
-        miao.gender = "男"; // 为对象的gender字段赋值
-        miao.age = 22; // 为对象的age字段赋值
-        miao.work(); // 调用对象的work()方法
+        Person songjiang = new Person(); // 实例化对象miao
+        songjiang.name = "宋江"; // 为对象的name字段赋值
+        songjiang.gender = "男"; // 为对象的gender字段赋值
+        songjiang.age = 22; // 为对象的age字段赋值
+        songjiang.work(); // 调用对象的work()方法
     }
 }

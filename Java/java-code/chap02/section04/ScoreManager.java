@@ -1,6 +1,6 @@
 package chap02.section04;
 
-// chap02/section04
+// chap02/section04/ScoreManager.java
 import java.util.Scanner;
 
 public class ScoreManager {

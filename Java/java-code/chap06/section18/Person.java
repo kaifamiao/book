@@ -56,7 +56,8 @@ public class Person {
 
     // 定义自我介绍方法
     public void say() {
-        System.out.println("自我介绍一下，姓名：" + this.name + "，性别：" + this.gender
+        System.out.println("自我介绍一下，姓名：" + this.name +
+                "，性别：" + this.gender
                 + "，年龄：" + this.age);
     }
 }

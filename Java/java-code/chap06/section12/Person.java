@@ -10,17 +10,17 @@ public class Person {
     public static void main(String[] args) {
         // 实例化第一个Person对象
         Person zs = new Person();
-        zs.name = "张三";
+        zs.name = "宋江";
         zs.gender = "男";
         zs.age = 22;
         // 实例化第二个Person对象
         Person ls = new Person();
-        ls.name = "李四";
+        ls.name = "华荣";
         ls.gender = "男";
         ls.age = 21;
         // 实例化第三个Person对象
         Person ww = new Person();
-        ww.name = "王五";
+        ww.name = "扈三娘";
         ww.gender = "女";
         ww.age = 18;
         // 定义Person类型的数组，并初始化数组元素

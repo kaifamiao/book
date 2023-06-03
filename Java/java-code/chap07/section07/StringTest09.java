@@ -13,6 +13,7 @@ public class StringTest09 {
         str = String.format("100的一半是：%d", 100 / 2);
         System.out.println(str); // 100的一半是：50
         // 使用printf()方法代替format方法来格式化字符串
-        System.out.printf("50元的书打8.5折扣是：%f 元", 50 * 0.85); // 50元的书打8.5折扣是：42.500000 元
+        // 50元的书打8.5折扣是：42.500000 元
+        System.out.printf("50元的书打8.5折扣是：%f 元", 50 * 0.85);
     }
 }

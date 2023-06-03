@@ -1,6 +1,6 @@
 package chap05.section07;
 
-// chap05/section07
+// chap05/section07/Main.java
 public class Main {
 
     public static int factorial(int n) {
@@ -15,5 +15,4 @@ public class Main {
         int result = factorial(5); // 调用递归函数计算 5 的阶乘
         System.out.println(result); // 输出 120
     }
-
 }

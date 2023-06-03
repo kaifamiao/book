@@ -11,6 +11,5 @@ public class Main {
         Pattern p = Pattern.compile("\\d\\d\\d");
         Matcher m = p.matcher("a123b");
         System.out.println(m.find()); // 输出结果true
-
     }
 }

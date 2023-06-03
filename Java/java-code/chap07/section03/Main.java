@@ -12,8 +12,8 @@ public class Main {
         String text = "hello 123 world";
         Matcher matcher = pattern.matcher(text);  // 创建匹配器对象
         while (matcher.find()) {
-            System.out.println(text + "匹配结果是：" + matcher.group());  // 输出匹配结果
-
+            // 输出匹配结果
+            System.out.println(text + "匹配结果是：" + matcher.group());
         }
     }
 }

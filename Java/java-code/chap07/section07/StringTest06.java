@@ -8,8 +8,7 @@ public class StringTest06 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("请输入Email");
-        String email = input.next();
-        email = email.toLowerCase();
+        String email = input.next().toLowerCase();
         int atIndex = email.indexOf("@");
         int dotIndex = email.indexOf(".");
         // 必须包含“@”和“.”
@@ -23,12 +22,12 @@ public class StringTest06 {
             return;
         }
         // “@”不在开头和结尾，并且只能出现一次
-        if (email.startsWith("@") == true || email.endsWith(".")) {
+        if (email.startsWith("@")|| email.endsWith(".")) {
             System.out.println("Email非法，不能以@开头，不能以.结尾");
             return;
         }
         // “@”只能出现一次
-        String array[] = email.split("@");
+        String[] array = email.split("@");
         if (array.length != 2) {
             System.out.println("Email非法，要求@有且只有一个");
             return;

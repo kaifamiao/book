@@ -1,6 +1,6 @@
 package chap05.section06;
 
-// chap05/section06
+// chap05/section06/Main.java
 public class Main {
 
     public static int sum(int... nums) {

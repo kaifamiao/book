@@ -1,6 +1,6 @@
 package chap04.section03;
 
-// chap04/section03
+// chap04/section03/Main.java
 public class Main {
 
     public static void main(String[] args) {
