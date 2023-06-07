@@ -27,6 +27,7 @@ VALUES
 SELECT 
   LAST_INSERT_ID() INTO id; 
 END $$
+DELIMITER ;
 
 
 /* 任务3 */
@@ -115,7 +116,7 @@ AFTER
 VALUES 
   (NEW.id); 
 END $$; 
-
+DELIMITER ;
 
 /* 任务8*/
 # 创建索引
@@ -124,7 +125,7 @@ CREATE INDEX ix_UserInfo_UserName ON userinfo(user_name);
 
 /* 任务9*/
 # 测试索引
-EXPLAIN SELECT * FROM userinfo WHERE username='林冲';
+EXPLAIN SELECT * FROM userinfo WHERE user_name='林冲';
 
 /* 任务10*/
 #  准备测试索引的记录
@@ -164,7 +165,26 @@ FROM
    user_name = 'kfm';  
 
 
-/* 任务13：使用视图查询员工信息*/
+/* 任务13： 使用WITH CHECK OPTION子句创建视图，并成功插入数据*/
+# 第一步：创建视图查找sal>4000的员工；  
+CREATE VIEW v1 AS SELECT * FROM emp WHERE sal>4000 WITH CHECK OPTION; 
+
+# 第二步：查询视图中的数据
+SELECT * FROM v1;
+
+# 第三步：在v1 中分别插入sal=3000和5500的数据，进行测试
+# sal=3000
+INSERT INTO v1(emp_no, e_name, job, mgr, hirdate, sal, comm, dept_no) 
+VALUES (10020, 'kfm', '实习生', 2001, '2006-1-1', 3000, 10000, 10);
+# sal=5500
+INSERT INTO v1(emp_no, e_name, job, mgr, hirdate, sal, comm, dept_no) 
+VALUES (10020, 'kfm', '实习生', 2001, '2006-1-1', 5500, 10000, 10);
+
+# 第4步：查询视图中的数据
+SELECT * FROM v1;
+
+
+/* 任务14：使用视图查询员工信息*/
 # 第一步：定义视图
 CREATE VIEW v_emp AS 
 SELECT 
@@ -179,31 +199,47 @@ show tables;
 # 第三步：使用视图
 select  * from v_emp;
 
-/* 任务14：实现转账功能*/  
+
+/* 任务15*/  
+# 设置当前会话的隔离级别为READ UNCOMMITTED
+SET SESSION TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
+
+
+/* 任务16*/  
+# 查看当前会话的隔离级别
+SELECT @@SESSION.transaction_isolation;
+
+
+/* 任务17：实现转账功能*/  
 -- 创建表  
 CREATE TABLE account (  
     id INT PRIMARY KEY AUTO_INCREMENT,  
-    NAME VARCHAR(10),  
+    name VARCHAR(10),  
     balance DOUBLE  
 );  
 -- 添加数据  
-INSERT INTO account (NAME, balance) VALUES ('zhangsan', 1000), ('lisi', 1000);  
-  
-UPDATE account SET balance = 1000;  
+INSERT INTO account (name, balance) VALUES ('zhangsan', 1000), ('lisi', 1000);  
+
 SELECT * FROM account;  
--- 0. 开启事务  
-START TRANSACTION;  
--- 1. 张三账户 -500  
-UPDATE account SET balance = balance - 500 WHERE NAME = 'zhangsan';  
--- 2. 李四账户 +500  
--- 出错了...  
-UPDATE account SET balance = balance + 500 WHERE NAME = 'lisi';  
+
+-- 开启事务  
+SET autocommit = 0; -- 关闭自动提交
+START TRANSACTION -- 开启事务
+
+--转账
+-- 1. 开发喵1账户 -500  
+UPDATE account SET balance = balance - 500 WHERE name = '开发喵1';  
+-- 2. 开发喵2账户 +500  
+UPDATE account SET balance = balance + 500 WHERE NAME = '开发喵2';  
   
--- 发现执行没有问题，提交事务  
+-- 成功了提交事务  
 COMMIT;  
-  
--- 发现出问题了，回滚事务  
+-- 失败了回滚事务  
 ROLLBACK;  
+
+-- 事务完成  恢复自动提交
+SET autocommit = 1;
+
 
 
 

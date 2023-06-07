@@ -6,6 +6,11 @@ ALTER TABLE dept
 
 
 /* 任务2 */
+#  删除emp表中的主键约束
+ ALTER TABLE dept DROP PRIMARY KEY;
+
+
+/* 任务3 */
 # 创建员工表，emp_no为自增长主键
 CREATE TABLE emp(
 	emp_no INT PRIMARY KEY AUTO_INCREMENT,
@@ -139,7 +144,7 @@ SELECT * FROM emp WHERE e_name LIKE '__义';
 
 /* 任务19 */
 #　查询mgr的值为NULL的员工
-SELECT * FROM emp WHERE mgr IS null;
+SELECT * FROM emp WHERE mgr IS NULL;
 
 
 /* 任务20 */
@@ -166,11 +171,11 @@ SELECT * FROM emp LIMIT 0,2;
 /* 任务23 */
 # 查询最高工资、最低工资、平均工资、总工资、公司总人数
 SELECT 
-  MAX(sal) 最高工资, 
-  MIN(sal) 最低工资, 
-  AVG(sal) 平均工资, 
-  SUM(sal) 总工资, 
-  COUNT(*) 公司总人数 
+  MAX(sal) "最高工资", 
+  MIN(sal) "最低工资", 
+  AVG(sal) "平均工资", 
+  SUM(sal) "总工资", 
+  COUNT(*) "公司总人数" 
 FROM 
   emp;
 
@@ -252,9 +257,9 @@ WHERE (e1.sal,e1.comm) = (SELECT e2.sal,e2.comm FROM emp e2 WHERE e2.e_name='张
 
 
 /* 任务36 */
-# 统计2000年以后入职，部门人数超过2人的部门，按照部门人数从多到少排序输出，分页显示，每页5条。
-SELECT dept_no 部门编号, e_name 员工, hirdate 入职时间 FROM emp WHERE hirdate>='2000-01-01'
-GROUP BY dept_no HAVING COUNT(*)>=2 ORDER BY COUNT(*)DESC LIMIT 0,5; 
+# 统计2000年以后入职，部门人数超过2人的部门，按照部门人数从多到少排序输出，分页显示，每页2条。
+SELECT dept_no, COUNT(*) FROM emp WHERE hirdate>='2000-01-01'
+GROUP BY dept_no HAVING COUNT(*)>=2 ORDER BY COUNT(*)DESC LIMIT 0,1; 
 
 
 /* 任务37 */
