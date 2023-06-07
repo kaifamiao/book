@@ -1,4 +1,4 @@
-/*  任务1 */
+/*  任务1：设计用户管理数据库 */
 # 创建银行数据库
 CREATE DATABASE usermanager;
 
@@ -56,6 +56,7 @@ DELIMITER;
 -- 调用  
 CALL add_sal(4000, @salary);  
 
+
 /* 任务5 */
 # 使用case-when语句实现emp表中sal的变化
 DELIMITER$$  
@@ -74,6 +75,7 @@ DELIMITER;
   
 #调用  
 CALL test_if_case2(4000);  
+
 
 /* 任务6 */
 # 批量插入，根据次数插入到userinfo表中多条记录
@@ -118,6 +120,7 @@ VALUES
 END $$; 
 DELIMITER ;
 
+
 /* 任务8*/
 # 创建索引
 CREATE INDEX ix_UserInfo_UserName ON userinfo(user_name);
@@ -143,6 +146,7 @@ DELIMITER;
 -- 调用
 CALL pro_while(100000);
 
+
 /*任务11*/
 ＃ 重新测试索引
 EXPLAIN 
@@ -165,7 +169,18 @@ FROM
    user_name = 'kfm';  
 
 
-/* 任务13： 使用WITH CHECK OPTION子句创建视图，并成功插入数据*/
+/* 任务13：使用视图查询员工信息 */
+# 第一步：定义视图
+CREATE VIEW v_emp AS SELECT emp_no,e_name,d_name FROM emp INNER JOIN dept ON emp.dept_no = dept.dept_no;
+
+# 第二步：查看视图
+SHOW tables;
+
+# 第三步：使用视图
+SELECT * FROM v_emp;
+
+
+/* 任务14： 使用WITH CHECK OPTION子句创建视图，并成功插入数据*/
 # 第一步：创建视图查找sal>4000的员工；  
 CREATE VIEW v1 AS SELECT * FROM emp WHERE sal>4000 WITH CHECK OPTION; 
 
@@ -182,22 +197,6 @@ VALUES (10020, 'kfm', '实习生', 2001, '2006-1-1', 5500, 10000, 10);
 
 # 第4步：查询视图中的数据
 SELECT * FROM v1;
-
-
-/* 任务14：使用视图查询员工信息*/
-# 第一步：定义视图
-CREATE VIEW v_emp AS 
-SELECT 
-  emp_no, 
-  e_name, 
-  d_name 
-FROM 
-  emp 
-  INNER JOIN dept ON emp.dept_no = dept.dept_n;
-# 第二步：查看视图
-show tables;
-# 第三步：使用视图
-select  * from v_emp;
 
 
 /* 任务15*/  
