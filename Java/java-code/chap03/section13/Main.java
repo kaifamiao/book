@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        String over = null;
+        int over = 0;
         Scanner input = new Scanner(System.in);
         // 外循环控制人数
         do {
@@ -22,9 +22,9 @@ public class Main {
             int avg = sum / 5;
             System.out.println("总分是：" + sum);
             System.out.println("平均分是：" + avg);
-            System.out.println("继续输入吗？(y/n)");
-            over = input.next();
-        } while ("y".equals(over) || "Y".equals(over));
+            System.out.println("继续输入吗？(1/0)");
+            over = input.nextInt();
+        } while (over == 1);
         System.out.println("程序已退出");
     }
 }
