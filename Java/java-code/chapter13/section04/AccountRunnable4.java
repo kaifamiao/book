@@ -11,8 +11,8 @@ public class AccountRunnable4 implements Runnable {
     private Lock lock = new ReentrantLock(); // 创建一个 ReentrantLock 对象
 
     public void makeWithdrawal(int amount) {
-        lock.lock(); // 获取锁
         try {
+            lock.lock(); // 获取锁
             // 需要进行同步的代码
             if (account.getBalance() >= amount) {
                 System.out.println(Thread.currentThread().getName() + "准备取款");

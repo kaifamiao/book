@@ -5,7 +5,7 @@ public class RunnableExample {
     public static void main(String[] args) {
         Thread.currentThread().setName("主线程");
         // 创建子线程对象t
-        Thread t = new Thread(new MyThread2());
+        Thread t = new Thread(new MyThread());
         // 设置子线程名称为"子线程"
         t.setName("子线程");
         // 启动子线程，调用run方法，子线程开始运行
@@ -18,7 +18,7 @@ public class RunnableExample {
     }
 }
 
-class MyThread2 implements Runnable {
+class MyThread implements Runnable {
     @Override
     public void run() {
         for (int i = 0; i < 100; i++) {

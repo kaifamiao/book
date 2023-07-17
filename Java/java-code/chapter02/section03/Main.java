@@ -1,6 +1,6 @@
 package chapter02.section03;
 
-// chapter02/section03
+// chapter02/section03/Main.java
 import java.util.Scanner;
 
 public class Main {

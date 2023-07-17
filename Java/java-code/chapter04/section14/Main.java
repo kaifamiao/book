@@ -1,6 +1,6 @@
 package chapter04.section14;
 
-// chapter04/section14
+// chapter04/section14/Main.java
 import java.util.Arrays;
 
 public class Main {

@@ -16,8 +16,7 @@ public static void fileInfo(String path, String filename) {
     File file = new File(path, filename);
     // length()方法用于获取文件大小
     System.out.println("文件大小=" + file.length() + "byte");
-    System.out.println("文件最后修改日期" + new SimpleDateFormat(
-            "yyyy-MM-dd HH:mm:ss:SSS").format(new Date(file.lastModified())));
+    System.out.println("文件路径=" + file.getAbsolutePath());
 }
 
 /**

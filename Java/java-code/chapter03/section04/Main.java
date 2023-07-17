@@ -2,7 +2,6 @@ package chapter03.section04;
 
 // chapter03/section04/Main.java
 import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {

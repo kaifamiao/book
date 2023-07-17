@@ -2,7 +2,6 @@ package chapter04.section17;
 
 // chapter04/section17/Main.java
 import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
