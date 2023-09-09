@@ -4,7 +4,6 @@ package chapter12.section04;
 public class Student {
     private String name;
     private int age;
-
     public String toString() {
         return "name is " + this.name + ", age is " + this.age;
     }

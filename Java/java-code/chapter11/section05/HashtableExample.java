@@ -2,7 +2,6 @@ package chapter11.section05;
 
 // chapter11/section05/HashtableExample.java
 import java.util.Hashtable;
-
 public class HashtableExample {
     public static void main(String[] args) {
         // 创建 Hashtable 对象

@@ -7,7 +7,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Demo02 {
-
     public static void main(String[] args) {
         // 获取Person类的Class对象
         Class clazz = Person.class;

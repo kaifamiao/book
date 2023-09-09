@@ -4,15 +4,10 @@ package chapter06.section19;
 public class Person {
 
     private String name;
-    private int age;
 
     public void setName(String name) {
+        // 局部变量name遮蔽了成员变量name，使用this.name引用成员变量
         this.name = name;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
 }
 

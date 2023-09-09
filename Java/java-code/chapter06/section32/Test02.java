@@ -2,7 +2,6 @@ package chapter06.section32;
 
 // chapter06/section32/Test02.java
 import java.util.Scanner;
-
 public class Test02 {
 
     public static void main(String[] args) {

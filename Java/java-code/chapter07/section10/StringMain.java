@@ -12,7 +12,6 @@ public class StringMain {
     long performanceBonus = 400L;     // 考核奖金
     double performanceBonusScore = 0.9D;    // 考核奖金得分
     byte attendanceAllowance = 100;      // 全勤补助
-
     public void parseMethod1() {
         System.out.println("******* 方法1输出结果 ******");
         System.out.println("姓名：" + name);
@@ -25,7 +24,6 @@ public class StringMain {
         System.out.println("考核奖金得分：" + performanceBonusScore);
         System.out.println("全勤补助：" + attendanceAllowance);
     }
-
     public void parseMethod2() {
         System.out.println("******* 方法2输出结果 ******");
         System.out.println("姓名：" + name);

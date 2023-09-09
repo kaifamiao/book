@@ -4,7 +4,6 @@ package chapter12.section04;
 import java.lang.reflect.Field;
 
 public class Demo03 {
-
     public static void main(String[] args) throws Exception {
         // 创建 Person 对象
         Person person = new Person();

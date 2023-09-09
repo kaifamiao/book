@@ -2,13 +2,10 @@ package chapter07.section08;
 
 // chapter07/section08/CharacterTest.java
 public class CharacterTest{
-
     public static void main(String[] args) {
         Character c = 'a';
-
         char res1 = c.charValue();
         System.out.println(res1); // a
-
         Character a = 'a';
         Character b = 'b';
         System.out.println(a.compareTo(b)); // -1

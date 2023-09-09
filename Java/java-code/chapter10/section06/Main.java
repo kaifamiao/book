@@ -3,7 +3,6 @@ package chapter10.section06;
 // chapter10/section06/Main.java
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         try {

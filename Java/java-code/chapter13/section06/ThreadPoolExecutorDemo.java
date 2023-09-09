@@ -2,7 +2,6 @@ package chapter13.section06;
 
 // chapter13/section06/ThreadPoolExecutorDemo.java
 import java.util.concurrent.*;
-
 public class ThreadPoolExecutorDemo {
     public static void main(String[] args) {
         // 核心线程数为2，最大线程数为5，线程空闲时间为1秒，使用无界队列，

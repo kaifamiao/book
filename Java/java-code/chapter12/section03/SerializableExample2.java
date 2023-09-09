@@ -4,7 +4,6 @@ package chapter12.section03;
 import java.io.*;
 
 public class SerializableExample2 {
-
     public static void main(String[] args) {
         try(FileInputStream in = new FileInputStream("E:\\kfm\\Student.txt");
             ObjectInputStream ois = new ObjectInputStream(in);){

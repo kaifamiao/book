@@ -4,7 +4,6 @@ package chapter12.section02;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
 public class FileReaderExample {
     public static void main(String[] args) throws IOException {
         FileReader fr = null;

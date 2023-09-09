@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class HashMapExample {
 
-
     public static void main(String[] args) {
         // 创建好汉对象
         Hero hero1 = new Hero("林冲", "男");

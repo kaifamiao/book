@@ -1,6 +1,6 @@
 package chapter12.section02;
 
-// chapter12/section02/BufferedExample.java
+// chapter12/section02/BufferedInputStreamExample.java
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;

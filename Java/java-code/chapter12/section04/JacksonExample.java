@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.Arrays;
 
 public class JacksonExample {
-
     public static void main(String[] args) {
         // 创建一个Java对象
         Person person = new Person("John", 30, true, Arrays.asList("reading", "traveling"));

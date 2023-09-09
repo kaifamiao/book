@@ -4,9 +4,7 @@ package chapter11.section04;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 public class RemoveElementInLoopExample {
-
     public static void main(String[] args) {
         List list = new ArrayList();
         list.add(1);

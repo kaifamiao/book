@@ -2,7 +2,6 @@ package chapter12.section02;
 
 // chapter12/section02/InputStreamReaderExample.java
 import java.io.*;
-
 public class InputStreamReaderExample {
 
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package chapter13.section03;
 
-// chapterter13/section03/Test5.java
+// chapter13/section03/Test5.java
 public class Test5 {
     public static void main(String[] args) {
         FirstThread t1 = new FirstThread();

@@ -2,7 +2,6 @@ package chapter11.section03;
 
 // chapter11/section03/TreeSetExample.java
 import java.util.TreeSet;
-
 public class TreeSetExample {
     public static void main(String[] args) {
         // 创建一个TreeSet对象

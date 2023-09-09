@@ -3,7 +3,6 @@ package chapter13.section05;
 // chapter13/section05/BlockingQueueExample.java
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
-
 public class BlockingQueueExample {
     public static void main(String[] args) {
         BlockingQueue<String> queue = new ArrayBlockingQueue<>(10);

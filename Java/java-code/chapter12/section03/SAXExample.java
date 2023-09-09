@@ -4,7 +4,6 @@ package chapter12.section03;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.File;
-
 public class SAXExample {
     public static void main(String[] args) {
         try {

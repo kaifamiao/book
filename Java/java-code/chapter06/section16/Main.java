@@ -15,10 +15,4 @@ public class Main {
         Main main = new Main();
         System.out.println("创建Main对象");
     }
-
-public class Person {
-    private int age;
-    private String name;
-    private String gender;
-}
 }

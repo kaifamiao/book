@@ -6,7 +6,6 @@ public class SharedData {
     private char c;
     // 标志位，true表示商品未消费，false表示已消费
     private boolean isProduced = false;
-
     // 同步方法
     public synchronized void putShareChar(char c) {
         // 如果产品还未消费，则生产者等待

@@ -2,7 +2,6 @@ package chapter11.section01;
 
 // chapter11/section01/ArrayListExample.java
 import java.util.ArrayList;
-
 public class ArrayListExample {
     public static void main(String[] args) {
         // 创建ArrayList集合对象list

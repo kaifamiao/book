@@ -2,7 +2,6 @@ package chapter12.section04;
 
 // chapter12/section04/Person.java
 import java.util.List;
-
 public class Person{
 
     private String name;

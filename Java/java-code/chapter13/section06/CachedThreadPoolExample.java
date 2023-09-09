@@ -4,7 +4,6 @@ package chapter13.section06;
 import java.time.LocalTime;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 public class CachedThreadPoolExample {
 
     public static void main(String[] args) {

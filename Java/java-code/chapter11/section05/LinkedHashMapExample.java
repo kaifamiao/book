@@ -3,7 +3,6 @@ package chapter11.section05;
 // chapter11/section05/LinkedHashMapExample.java
 import java.util.LinkedHashMap;
 import java.util.Map;
-
 public class LinkedHashMapExample {
     public static void main(String[] args) {
         // 创建一个 LinkedHashMap 对象

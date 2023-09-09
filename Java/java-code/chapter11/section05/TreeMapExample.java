@@ -4,7 +4,6 @@ package chapter11.section05;
 import java.util.Properties;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
-
 public class TreeMapExample {
     public static void main(String[] args) {
         // 创建TreeMap对象

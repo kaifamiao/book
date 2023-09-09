@@ -1,6 +1,6 @@
 package chapter14.section02;
 
-// chapter14/section02/Client.java
+// chapter14/section02/UserModel.java
 // 定义UserModel类
 import java.io.Serializable;
 

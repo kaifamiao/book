@@ -4,7 +4,6 @@ package chapter13.section05;
 // 生产者线程类
 public class Producer extends Thread {
     private SharedData s;
-
     public Producer(SharedData s) {
         this.s = s;
     }

@@ -1,6 +1,6 @@
 package chapter11.section02;
 
-// chapter11/section02/Main.java
+// chapter11/section02/LinkedListExample.java
 import java.util.LinkedList;
 
 public class LinkedListExample {

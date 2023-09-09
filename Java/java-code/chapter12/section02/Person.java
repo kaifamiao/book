@@ -4,7 +4,6 @@ package chapter12.section02;
 public class Person implements Cloneable {
     private String name;
     private Address address;
-
     public Person(String name, Address address) {
         this.name = name;
         this.address = address;

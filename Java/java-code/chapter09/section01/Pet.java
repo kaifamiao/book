@@ -21,7 +21,7 @@ public abstract class Pet {
 
 class Test {
     public static void main(String[] args) {
-        // Pet pet = new Pet("大黄");   // 错误，抽象类不能被实例化
-        // pet.print();
+//         Pet pet = new Pet("大黄");   // 错误，抽象类不能被实例化
+//         pet.print();
     }
 }

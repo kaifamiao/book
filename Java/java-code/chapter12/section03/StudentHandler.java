@@ -3,14 +3,14 @@ package chapter12.section03;
 // chapter12/section03/StudentHandler.java
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
-
 public class StudentHandler extends DefaultHandler {
     private boolean isName;
     private boolean isAge;
     private boolean isGender;
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) {
+    public void startElement(String uri, String localName, String qName,
+                             Attributes attributes) {
         if (qName.equalsIgnoreCase("name")) {
             isName = true;
         } else if (qName.equalsIgnoreCase("age")) {

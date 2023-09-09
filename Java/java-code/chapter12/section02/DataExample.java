@@ -2,7 +2,6 @@ package chapter12.section02;
 
 // chapter12/section02/DataExample.java
 import java.io.*;
-
 public class DataExample {
 
     public static void main(String[] args) throws IOException {

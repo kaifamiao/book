@@ -2,7 +2,6 @@ package chapter11.section05;
 
 // chapter11/section05/PropertiesExample.java
 import java.util.Properties;
-
 public class PropertiesExample {
     public static void main(String[] args) {
         // 创建 Properties 对象

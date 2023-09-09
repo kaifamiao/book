@@ -2,7 +2,6 @@ package chapter11.section03;
 
 // chapter11/section03/LinkedHashSetExample.java
 import java.util.LinkedHashSet;
-
 public class LinkedHashSetExample {
     public static void main(String[] args) {
         // 创建LinkedHashSet对象

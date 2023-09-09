@@ -3,13 +3,11 @@ package chapter13.section04;
 // chapter13/section04/AccountRunnable4.java
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
 public class AccountRunnable4 implements Runnable {
 
     // 所有的TestAccount对象创建的线程共享同一个账户对象
     private Account account = new Account();
     private Lock lock = new ReentrantLock(); // 创建一个 ReentrantLock 对象
-
     public void makeWithdrawal(int amount) {
         try {
             lock.lock(); // 获取锁

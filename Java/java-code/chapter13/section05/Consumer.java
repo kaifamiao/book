@@ -4,7 +4,6 @@ package chapter13.section05;
 // 消费者线程类
 public class Consumer extends Thread {
     private SharedData s;
-
     public Consumer(SharedData s) {
         this.s = s;
     }

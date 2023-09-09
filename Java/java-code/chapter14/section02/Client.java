@@ -18,7 +18,8 @@ public class Client {
         client.shutdownOutput();
         // 接收服务器端的响应，即从输入流中读取信息
         String reply = null;
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+        InputStreamReader reader = new InputStreamReader(inputStream);
+        BufferedReader bufferedReader = new BufferedReader(reader);
         while ((reply = bufferedReader.readLine()) != null) {
             System.out.println("我是客户端，服务器相应的内容为：" + reply);
         }

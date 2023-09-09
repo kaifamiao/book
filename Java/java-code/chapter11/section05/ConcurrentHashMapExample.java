@@ -2,7 +2,6 @@ package chapter11.section05;
 
 // chapter11/section05/ConcurrentHashMapExample.java
 import java.util.concurrent.ConcurrentHashMap;
-
 public class ConcurrentHashMapExample {
     public static void main(String[] args) {
         // 创建一个 ConcurrentHashMap 对象

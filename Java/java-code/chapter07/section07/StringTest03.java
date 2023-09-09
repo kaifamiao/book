@@ -1,6 +1,6 @@
 package chapter07.section07;
 
-// chapter07.section07/StringTest03.java
+// chapter07/section07/StringTest03.java
 public class StringTest03 {
 
     public static void main(String[] args) {

@@ -3,12 +3,10 @@ package chapter08.section04;
 // chapter08/section04/LocalDateExample.java
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-
 public class LocalDateExample {
     public static void main(String[] args) {
         // 创建LocalDate对象
         LocalDate today = LocalDate.now();
-//        System.out.println("今天的日期: " + today);
         LocalDate specificDate = LocalDate.of(1970, 1, 1);
         System.out.println("指定日期: " + specificDate);
         // 解析字符串为LocalDate对象
@@ -26,7 +24,6 @@ public class LocalDateExample {
         LocalDate pastDate = specificDate.minusMonths(1);
         System.out.println("增加日期: " + futureDate);
         System.out.println("减少日期: " + pastDate);
-
         // 判断日期关系
         boolean isBefore = specificDate.isBefore(parsedDate);
         boolean isAfter = specificDate.isAfter(parsedDate);
@@ -34,7 +31,6 @@ public class LocalDateExample {
         System.out.println("是否在指定日期之前: " + isBefore);
         System.out.println("是否在指定日期之后: " + isAfter);
         System.out.println("是否与指定日期相等: " + isEqual);
-
         // 格式化日期
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String formattedDate = specificDate.format(formatter);

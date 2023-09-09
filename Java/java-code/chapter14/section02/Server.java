@@ -6,7 +6,6 @@ import java.io.ObjectInputStream;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-
 public class Server {
     public static void main(String[] args) throws Exception {
         // 建立一个服务器 Socket（ ServerSocket），指定端口8800并开始监听

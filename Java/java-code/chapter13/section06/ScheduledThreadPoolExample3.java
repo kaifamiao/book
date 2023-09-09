@@ -1,6 +1,6 @@
 package chapter13.section06;
 
-// chapter13/section06/ScheduledThreadPoolExample2.java
+// chapter13/section06/ScheduledThreadPoolExample3.java
 // 周期执行
 import java.time.LocalTime;
 import java.util.concurrent.Executors;

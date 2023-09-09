@@ -3,7 +3,6 @@ package chapter12.section04;
 // chapter12/section04/GsonExample.java
 import com.google.gson.Gson;
 import java.util.Arrays;
-
 public class GsonExample {
     public static void main(String[] args) {
         // 创建一个Java对象

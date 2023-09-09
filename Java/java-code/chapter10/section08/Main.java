@@ -1,9 +1,8 @@
 package chapter10.section08;
 
+// chapter10/section08/Main.java
 import java.util.HashMap;
 import java.util.Hashtable;
-
-// chapter10/section08/Main.java
 public class Main {
     public static void main(String[] args) {
         Person person = new Person();

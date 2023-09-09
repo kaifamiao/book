@@ -2,7 +2,6 @@ package chapter12.section04;
 
 // chapter12/section04/Demo04.java
 import java.lang.reflect.Method;
-
 public class Demo04 {
 
     public static void main(String[] args) throws Exception {

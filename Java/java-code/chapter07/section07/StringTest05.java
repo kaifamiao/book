@@ -1,6 +1,6 @@
 package chapter07.section07;
 
-// chapter07.section07/StringTest04.java
+// chapter07.section07/StringTest05.java
 import java.util.Scanner;
 
 public class StringTest05 {
