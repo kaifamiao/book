@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--name:为bean指定别名，别名可以有多个，使用逗号，分号，空格进行分隔-->
+    <!--
+    <bean id="bookService" name="service,bookServiceImpl" class="com.kaifamiao.service.impl.BookServiceImpl">
+        <property name="bookDao" ref="dao"/>
+    </bean>
+    -->
+    <!--
+    <bean id="bookDao" name="dao" class="com.kaifamiao.dao.impl.BookDaoImpl"/>
+    -->
+    <!--<bean id="bookDao" class="com.kaifamiao.dao.impl.BookDaoImpl" scope="prototype"/>
+    -->
+
+    <bean id="bookDao" class="com.kaifamiao.dao.impl.BookDaoImpl" scope="singleton"/>
+</beans>

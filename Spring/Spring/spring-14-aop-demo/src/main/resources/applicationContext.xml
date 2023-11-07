@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 定义Bean -->
+    <bean id="bookDao" class="com.kaifamiao.dao.impl.BookDaoImpl" />
+
+    <bean id="myAdvice" class="com.kaifamiao.advice.MyAdvice" />
+
+    <!-- 配置AOP -->
+    <aop:config>
+        <!-- 定义切点 -->
+        <aop:pointcut id="saveMethodPointcut" expression="execution(void com.kaifamiao.dao.BookDao.save())" />
+        <aop:pointcut id="updateMethodPointcut" expression="execution(void com.kaifamiao.dao.BookDao.update())" />
+
+        <!-- 定义advice -->
+        <aop:aspect ref="myAdvice">
+            <aop:before method="method" pointcut-ref="updateMethodPointcut" />
+        </aop:aspect>
+    </aop:config>
+
+</beans>

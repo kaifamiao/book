@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookDao" class="com.kaifamiao.dao.impl.BookDaoImpl">
+        <!-- 本例的集合的注入都写在这里 -->
+        <!-- 注入数组类型数据 -->
+        <property name="array">
+            <array>
+                <value>100</value>
+                <value>200</value>
+                <value>300</value>
+            </array>
+        </property>
+        <!-- 注入List类型数据 -->
+        <property name="list">
+            <list>
+                <value>Spring</value>
+                <value>SpringMVC</value>
+                <value>Mybatis</value>
+                <value>SpringBoot</value>
+            </list>
+        </property>
+        <!-- 注入Set类型数据 -->
+        <property name="set">
+            <set>
+                <value>Spring</value>
+                <value>SpringMVC</value>
+                <value>Mybatis</value>
+                <value>SpringBoot</value>
+            </set>
+        </property>
+        <!-- 注入Map类型数据 -->
+        <property name="map">
+            <map>
+                <entry key="name" value="haha"></entry>
+                <entry key="age" value="20"></entry>
+            </map>
+        </property>
+        <!-- 注入Properties类型数据 -->
+        <property name="properties">
+            <props>
+                <prop key="name">yaya</prop>
+                <prop key="age">20</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
